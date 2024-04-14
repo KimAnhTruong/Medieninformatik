@@ -17,5 +17,5 @@
 
 ## Screenshots
 
-![Alt text](image.png)
-![Alt text](image.png)
+![Alt text](/Screenshots/beauty_1662219107877.jpeg‚)
+![Alt text](/Screenshots/image.png)
