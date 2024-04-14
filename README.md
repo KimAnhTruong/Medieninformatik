@@ -17,5 +17,15 @@
 
 ## Screenshots
 
-![Alt text](/Screenshots/beauty_1662219107877.jpeg)
-![Alt text](/Screenshots/image.png)
+![Alt text](/Screenshots/Cover.png)
+![Alt text](/Screenshots/Navigation.png)
+![Alt text](/Screenshots/Hersteller.png)
+![Alt text](/Screenshots/Modell.png)
+![Alt text](/Screenshots/Ventil.png)
+![Alt text](/Screenshots/Betriebpause.png)
+![Alt text](/Screenshots/Einrichten.png)
+![Alt text](/Screenshots/Einstellen.png)
+![Alt text](/Screenshots/Fehlermeldung.png)
+![Alt text](/Screenshots/Glossar1.png)
+![Alt text](/Screenshots/Glossar2.png)
+![Alt text](/Screenshots/Lesezeichen.png)
