@@ -1,0 +1,19 @@
+[
+    {
+        "Code": "410",
+        "Beschreibung": "Eine oder mehrere Taster des Bordcomputers sind blockiert",
+        "Lösungsansatz": ["Prüfen, ob Taster verklemmt sind, z. B. durch eingedrungenen Schmutz.",
+                          "Taster gegebenenfalls reinigen"]
+    },
+    {
+        "Code": "414",
+        "Beschreibung": "Verbindungsproblem der Bedieneinheit",
+        "Lösungsansatz": "Fachhandel kontaktieren. Anschlüsse und Verbindungen prüfen lassen."
+    },
+    {
+        "Code": "418",
+        "Beschreibung": "Eine oder mehrere Taster der Bedieneinheit sind blockiert",
+        "Lösungsansatz": ["Prüfen, ob Taster verklemmt sind, z. B. durch eingedrungenen Schmutz.",
+                          "Taster gegebenenfalls reinigen"]
+    }
+]

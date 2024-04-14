@@ -1,0 +1,368 @@
+/* Allgemein */
+body {
+    margin-left: 40px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+ol {
+    margin-bottom: 10px;
+}
+h1 {
+    margin-left: 0;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+p {
+    width: 600px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+figure {
+    margin: 0;
+}
+figure img {
+    width: 300px;
+    height: auto;
+}
+
+div {
+    margin-bottom: 10px;
+}
+table {
+    caption-side: bottom;
+}
+caption::before {
+    content: "Tabelle: ";
+}
+
+/* Deckblatt */
+#deckblatt {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#deckblatt h1 {
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+#deckblatt img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 60px;
+}
+/* Link zum Inhaltsverzeichnis */
+.toc-link {
+    text-decoration: none;
+}
+.toc-link:hover {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+/* Ende */
+
+
+/* Inhaltsverzeichnis */
+/* Gestaltung der geschachteten Listen */
+#inhaltsverzeichnis .stufe1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+#inhaltsverzeichnis ol li:not(.stufe1) { /* Auswahl der 2. Ebenen */
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+#inhaltsverzeichnis ol li:not(.stufe1):hover {
+    background-color: #f2f2f2;
+    color: black;
+    text-decoration: none;
+}
+.Leseliste {
+    list-style-type: none;
+    text-decoration: underline;
+}
+/* Link zum Deckblatt */
+.cover-link {
+    margin-top: 40px;
+    margin-left: auto;
+    color: purple;
+    display: block;
+    text-decoration: underline;
+}
+/* Ende */
+
+
+/* Hersteller */
+.adresse div {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.kontakt { /* unsichtbare Tabelle */
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+.web-link { /* Link zur Webseite */
+    color: blue;
+    text-decoration: underline;
+}
+.toc-link2 { /* Link zum Inhaltsverzeichnis (andere Gestaltung) */
+    color: purple;
+    margin-top: 40px;
+    margin-left: auto;
+    display: block;
+    text-decoration: underline;
+}
+/* Ende */
+
+
+/* Typennummer und Modell */
+/* sichtbare Tabelle */
+.modell {
+    margin-left: 0px;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+    width: 400px;
+    border-spacing: 0;
+
+}
+.modell th {
+    text-align: center;
+    color: white;
+    background-color: grey;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    vertical-align: top;
+}
+.modell td {
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    vertical-align: top;
+    padding-left: 5px;
+}
+.modell caption {
+    margin-left: -80px;
+    margin-top: 5px;
+}
+/* Ende */
+
+
+/* Ventile */
+figcaption::before {
+    content: "Abbildung: ";
+}
+/* Ende */
+
+
+/* Betriebspause */
+.hinweis {
+    background-color: blue;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border: 2px solid grey;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: x-large;
+    width: 600px;
+}
+#betriebspause .konsequenz{
+    margin-left:auto;
+}
+#betriebspause .handlungsanweisung{
+    margin-left:auto;
+}
+/* Ende */
+
+
+/* Sattel ausrichten */
+#sattel-ausrichten p::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 8px solid black;
+    border-bottom: 6px solid transparent;
+    display: inline-block;
+    margin-right: 5px;
+}
+/* Ende */
+
+
+/* Sattelhöhe einstellen */
+#sattel-einstellen ul,
+#sattel-einstellen ol,
+#sattel-einstellen li {
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+/* Voraussetzung */
+.voraussetzung {
+    list-style-type: none;
+    margin-left: -20px;
+}
+.voraussetzung::before {
+    content: '\2713'; /* Entity Häkchen */
+    margin-right: 5px;
+    margin-left: -20px;
+}
+/* Handlungsresultat */
+.handlungsresultat {
+    list-style-type: none;
+    margin-left: -20px;
+}
+.handlungsresultat::before {
+    content: '\21D2'; /* Entity Doppelpfeil nach rechts */
+    margin-right: 5px;
+    margin-left: -20px;
+
+}
+#sattel-einstellen figure {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+/* Sicherheitshinweis VORSICHT */
+.vorsicht::before {
+    content: '\26A0\FE0F'; /* Entity Warnungszeichen */
+    color: yellow; 
+    font-size: 24px; 
+    margin-right: 5px; 
+}
+
+.vorsicht {
+    background-color: yellow;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid grey;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: x-large;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+/* Art der Quelle eines Sicherheitshinweis*/
+.art {
+    font-weight: bold;
+    margin-left: -20px;
+}
+/* Konsequenz eines Sicherheitshinweis*/
+.konsequenz {
+    margin-left: -20px;
+}
+/* Handlungsanweisung eines Sicherheitshinweis */
+.handlungsanweisung {
+    margin-left: -20px;
+}
+.handlungsanweisung::before {
+    content: '\2023'; /* Entity dreieck, Spitze rechts */
+    margin-right: 5px;
+}
+.handlungsanweisung::after {
+    content: "";
+    display: block;
+    width: 610px;
+    height: 2px;
+    background-color: grey;
+    margin-top: 10px;
+}
+#sattel-einstellen em {
+    font-style: italic;
+}
+#sattel-einstellen ul > li > ul > li {
+    list-style-type: disc;
+}
+/* Ende */
+
+/* Glossar 1 */
+#glossar1 dt {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#glossar1 dd {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* Teil 2 der Hausarbeit */
+
+/* Fehlermeldung Tabelle*/
+#FehlermeldungTabelle
+{
+    margin-left: 0px;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+    width: 600px;
+    border-spacing: 0;
+}
+#FehlermeldungTabelle th {
+    text-align: center;
+    color: white;
+    background-color: grey;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    vertical-align: top;
+}
+#FehlermeldungTabelle td {
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    vertical-align: top;
+    padding-left: 5px;
+}
+#FehlermeldungTabelle tbody td {
+    text-align: left; 
+    vertical-align: middle; 
+    border: 1px solid #CCCCCC;
+    height: 50px; 
+    padding-top: 10px; 
+    padding-bottom: 20px; 
+}
+.lösungsansatz::before {
+    content: '\2023'; /* Entity dreieck, Spitze rechts */
+    margin-right: 5px; /*Abstand zwischen Dreieck und Text*/
+    color: black;
+}
+
+
+/* Lesezeichen */
+.Lesezeichen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.LesezeichenButton {
+    background-color: white; /* Standardfarbe */
+    cursor: pointer;
+   
+}
+
+.LesezeichenButton.active {
+    background-color: red; /* Farbe beim Setzen */
+}
+
+#LesezeichenListe {
+    list-style-type: none;
+    margin-left: -40px;
+    text-decoration: underline;
+}
+
+/* Ende */
